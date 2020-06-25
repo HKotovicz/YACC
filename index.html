@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.5.1.js"></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Calculadora com YACC</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <div><h2>Editor</h2>
+      <input type="text" id="fname" name="fname">
+      <input type="submit" value="Submit" onclick="runCalc()">
+    </div>
+
+
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Resultado</h2>
+    <div class="inner"> Some text..</div>
+  </div>
+</div>
+
+<script src="calculator.js"></script>
+<script src="app.js"></script> 
+</body>
+</html>
